@@ -17,49 +17,6 @@ const Weekly = ({ cityInfo }) => {
                 if(cleanArr.length % 3 === 0) weeklyData.push(daily);
             }
 
-            // let weeklyData = [];
-            // let temp = [];
-            // const pattern = [2, 3, 3];
-
-                //--- 　備忘　---
-                //---  temp[]
-                //---  temp[data.list[5]]
-                //---  temp[lastIndex=0] = data.list[5], temp[lastIndex].index = 5
-                //---   (x.index = indexにてlistdata各々のindexプロパティを追加、現在ループしているindexに合わせる)
-                //---  pattern[lastIndex=0]= 2  (足し算のパターンを配列に格納しておく)
-                //---  index(現在ループしている配列のindex) = 新たに追跡しているindex なら、tempにpushする。
-                //---  temp[data.list[5], data.list[7]]
-
-            // data.list.forEach((x, index) => {
-            //     if (index < 5) return
-            //     if (index === 5) {
-            //         x.index = index;
-            //         temp.push(x)
-            //     }
-
-            //     const lastIndex = temp.length - 1;
-
-                //--- 　備忘　---
-                //---  pattern = [2, 3, 3]
-                //---  data.list[7] = 5 + "2", data.list[10] = 7 + "3", data.list[13] = 10 + "3"
-                //---  temp[data.list[5], data.list[7], data.list[10], data.list[13]]
-                //---  temp.pop() = data.list[13] ---> ※ pop()された後、元の配列は最後の要素が取り除かれた後の配列になる。
-                //---  temp = [data.list[5], data.list[7], data.list[10]]
-                //---  weeklyData = [ [data.list[5], data.list[7], data.list[10]] ]
-                //---  temp = [data.list[13]] --->　初期化
-
-            //     if (index === (temp[lastIndex].index + pattern[lastIndex])) {
-            //         x.index = index;
-            //         temp.push(x)
-            //     }
-
-            //     if (temp.length % 4 === 0) {
-            //         const popped = temp.pop();
-            //         weeklyData.push(temp);
-            //         temp = [popped];
-            //     }
-            // });
-
             const newArr = weeklyData.map(day => {
                 const dailyInfo = [];
                 day.forEach(({ main, weather, dt }) => {
