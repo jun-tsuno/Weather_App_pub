@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+.sun {
+    background-image: url('./img/sun.jpg');
+}
+
+.drizzle {
+    background-image: url('./img/drizzle.jpeg');
+}
+
+.rain {
+    background-image: url('./img/rain.jpg');
+}
+
+.snow {
+    background-image: url('./img/snow.jpg');
+}
+
+.atmosphere {
+    background-image: url('./img/atmosphere.jpg');
+}
+
+.clouds {
+    background-image: url('./img/clouds.jpg');
+}
+
+.clear {
+    background-image: url('./img/clear.jpg');
+}
