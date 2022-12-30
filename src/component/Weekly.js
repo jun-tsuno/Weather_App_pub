@@ -33,7 +33,7 @@ const Weekly = ({ cityInfo }) => {
 			return setWeekly(newArr);
 		};
 		getWeeklyData();
-	}, [cityInfo]);
+	}, [lat, lon]);
 
 	return (
 		<div className="md:flex md:justify-around">

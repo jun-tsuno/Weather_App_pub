@@ -36,7 +36,7 @@ const useCurrent = (cityInfo) => {
 			});
 		};
 		getCurrent();
-	}, [cityInfo]);
+	}, [lat, lon]);
 
 	return [current];
 };
